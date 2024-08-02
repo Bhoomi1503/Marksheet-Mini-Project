@@ -45,6 +45,15 @@ document.addEventListener('input', updateMarks);
 
             const gradeCell = document.getElementById('grade');
             gradeCell.textContent = getGrade(percentage);
+
+            const results=document.getElementById("result");
+            if(grandTotal<300){
+                
+                results.textContent= "FAIL";
+            }
+            else{
+                results.textContent= "PASS";
+            }
         }
 
         function numberToWords(number) {
@@ -61,6 +70,7 @@ document.addEventListener('input', updateMarks);
         }
 
         function getGrade(percentage) {
+            if (percentage >= 95) return 'O';
             if (percentage >= 90) return 'A+';
             if (percentage >= 80) return 'A';
             if (percentage >= 70) return 'B+';
@@ -69,6 +79,7 @@ document.addEventListener('input', updateMarks);
             if (percentage >= 40) return 'C';
             return 'F';
         }
+        
 
 
         
