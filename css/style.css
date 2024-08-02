@@ -1,15 +1,6 @@
 body{
     background-color: #f7f3e7;
 }
-/* .trans{
-    opacity: 0.1;
-  position: absolute;
-  left: 0;
-  top: 90px;
-  width: 100%;
-  height: 1000px;
-  z-index: 0;
-} */
 .con{
     border: 1px solid black;
     background-color: #f9f9f9;
@@ -29,12 +20,10 @@ body{
     flex-wrap: nowrap;
     justify-content: space-between;
     padding: 10px;
-
 }
 .h4{
     padding: 10px;
     margin: 0;
-    
 }
 #zero{
     color: red;
@@ -80,7 +69,6 @@ table, tr,td,th{
  color: black;
  font-weight: bold;
 }
-
 p{
     color: rgb(182, 82, 42); 
 }
@@ -91,7 +79,7 @@ p{
     padding: 20px;
     font-size: 13px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 #ani{
     color: black;
@@ -101,31 +89,92 @@ p{
     margin-top: 25px;
 }
 input{
-    width: 40px;
+    width: 39px;
     border: none;
     margin-left: 15px;
     background-color: #f2e3d4;
+    transform: translate(-2%, -10%);
 }
 input:hover{
     background-color: #f2e3d4;
     border: none;
 }
+
+/* Media Quries */
+
 @media (min-width:669px) and (max-width:768px){
     .con{
         margin-left:50px;
         margin-right:50px;
     }
+    .trans{
+        opacity: 0.1;
+        position: absolute;
+        margin: 0;
+        left: 90px;
+        width: 579px;
+        height: 1000px;
+        padding: 0 15px;
+        z-index: 0;
+        word-spacing: 20px;
+        letter-spacing: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      
+      }
 }
 @media (min-width:768px) and (max-width:1024px){
     .con{
         margin-left:170px;
         margin-right:100px;
     }
+    .trans{
+        opacity: 0.1;
+        position: absolute;
+        margin: 0;
+        left: 200px;
+        width: 579px;
+        height: 1000px;
+        padding: 0 15px;
+        z-index: 0;
+        word-spacing: 20px;
+        letter-spacing: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      
+      }
 }
-@media (min-width:320px) and (max-width:668px){
+@media (min-width:120px) and (max-width:668px){
     .con{
         margin-left:0px;
         margin-right:0px;
     }
+    .trans{
+        opacity: 0.1;
+        position: absolute;
+        margin: 0;
+        left: 30px;
+        width: 579px;
+        height: 1000px;
+        padding: 0 15px;
+        z-index: 0;
+        word-spacing: 20px;
+        letter-spacing: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      
+      }
 }
-/* #f8f2e4 */
+@media (min-width:1025px) and (max-width:1600px){
+    .trans{
+        opacity: 0.1;
+        position: absolute;
+        margin: 0;
+        left: 486px;
+        width: 579px;
+        height: 1000px;
+        padding: 0 15px;
+        z-index: 0;
+        word-spacing: 20px;
+        letter-spacing: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      
+      }
+}
